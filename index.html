@@ -2,42 +2,47 @@
 <head>
     <meta charset="UTF-8">
     <title>The Object Game</title>
-    <link rel="stylesheet" href="game.css">
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" >
+    <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="game.css">
 </head>
 <body>
-    <section class="container">
-        <div class="row" style="height:50%">
-            <div class="col-sm-7 col-sm-offset-3">
-                
-               <div class="panel panel-default" id='player-panel'>
-                   
-                    <div class="panel-heading" >
-                        <h3>Name: Major Payne</br> 
-                        Hit count: <span id='hits'>0</span></br>
-                        Health: <span id='health'>100</span> Safe: <span id='safe'>0</span></h3>
-                        <img class = 'center-block' style="withd: 240px;" src="http://www.trpaulsen.com/wp-content/uploads/2015/07/drill-sergeant2.jpg" alt="angry-sergant">   
-                    </div>
-            </div>
+ <div class="container">
+  <div class="row">
+    <div class="jumbotron">
+      <h1>The Slap Game</h1>
+    </div>
+    <div class="col-md-3 text-center info-box">
+                <div class="box green">
+                   <h2><span id='health'>100</span>%</h1>
+                   <h4>HEALTH</h3> 
+                </div>
+                <div class="box yellow">
+                   <h2><span id='safe'>0</span></h1>
+                   <h4>PROTECTION</h3> 
+                </div>
+                <div class="box red">
+                   <h2><span id='hits'>0</span></h1>
+                   <h4>HITS</h3> 
+                </div>
+     </div>
+     <div class="col-md-6">
+          <img class="img-responsive" src="https://rap4-radioafricagroup.netdna-ssl.com/wp-content/uploads/2016/04/angry-man.jpg">
+     </div>
+     <div class="col-md-3 btn-box text-right">
+                <div class="panishment" style="margin-bottom: 80px">
+                    <button type="button" class="btn btn-default btn-lg btn-block" onClick='hit("slap")'>SLAP</button>
+                    <button type="button" class="btn btn-default btn-lg btn-block" onclick='hit("punch")'>PUNCH</button>
+                    <button type="button" class="btn btn-default btn-lg btn-block" onclick='hit("kick")'>KICK</button>
+                </div>
+                <div class="protection">
+                   <button id="btn-cap" type="button" class="btn btn-default btn-lg btn-block" onClick='addMods("cap")'>CAP</button>
+                   <button id="btn-glass" class="btn btn-default btn-lg btn-block" onclick='addMods("glass")'>SUNGLASSES</button>
+                   <button id="btn-chain" class="btn btn-default btn-lg btn-block" onclick='addMods("chain")'> GOLGEN CHAIN</button> 
+                </div>
+     </div>
 
-             <div class="col-xs-7 col-xs-offset-3">                 
-                 <button style='background-color: yellow' type="button" onClick='hit("slap")'>SLAP HIM</button>
-                 <button style='background-color: orange' type="button" onclick='hit("punch")'> PUNCH HIM </button>
-                 <button style='background-color: red'    type="button" onclick='hit("kick")'> KICK HIM </button>
-             </div>
-             <div class="col-xs-7 col-xs-offset-3">                 
-                 <button style='background-color: green' type="button" onClick='addMods("helmet")'> HELMET </button>
-                 <button style='background-color: green' type="button" onclick='addMods("shield")'> SHIELD </button>
-                 <button style='background-color: green' type="button" onclick='addMods("vest")'> VEST </button>
-                 
-             </div>    
-            
-            
-        </div>
-     </section>
-     
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
      <script type="text/javascript" src="game.js"></script>
-
 </body>
 </html>

@@ -23,9 +23,9 @@ var item = function (name, modifier, description){
 }
 
 var items = {
-    helmet: new item("Helmet",  1,"an awesome helmet!"),
-    shield: new item("Shield",  3,"an awesome shield!"),    
-      vest: new item("Vest",    5,"an awesome vest!"),
+    cap: new item("Cap", 1,"an awesome cap!"),
+    glass: new item("Sunglasses", 3,"an awesome sunglasses!"),    
+    chain: new item("Chain", 5, "an awesome golden chain!"),
 }
 
 var player = { items:[] }
@@ -34,40 +34,27 @@ var player = { items:[] }
 function addMods(x) {
       
     var item = items[x];
-        
-    if(player.items.indexOf(item) < 0) {
-        player.items.push(item);
-        } else { alert ("He has " + item.description);
-    } 
-    
-    safe = 0;
-    for (var i=0; i < player.items.length; i++ ){
-        safe = safe + player.items[i].modifier;
-    }
-  
-    document.getElementById('safe').innerText = safe;
+    $("#btn-"+x).attr('disabled',true);
+    player.items.push(item);
+
+    safe = safe + item.modifier;
+    $("#safe").text(safe);
 }
 
 function hit(x){
     
     if(health <= 0) return
-    
     var damage = hitDamages[x].damage - safe;
- 
     health = health - damage;
     hits++;
     update();  
 }
 
 function update() {
-    
-    document.getElementById('health').innerText = health;
-    document.getElementById('hits').innerText = hits;
-    
+    $("#health").text(health);
+    $("#hits").text(hits);
     
     if(health <= 0){
-         document.getElementById("player-panel").classList.add("panel-danger")
-    }else{
-         document.getElementById("player-panel").classList.remove("panel-danger")
+         $("img[src]").attr("src", "http://wallpapercave.com/wp/RMIs0gk.png")
     }
-}
+};

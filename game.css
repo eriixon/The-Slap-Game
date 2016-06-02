@@ -3,6 +3,49 @@ button {
     width: 100px;
     height: 50px; 
 }
-img {
-    width: 450px;
+body{
+    background-color: black;
+}
+.jumbotron{
+    background-color: black;
+    text-align: center;
+    color: red;
+    margin: 0;
+    font-family: 'Bangers', cursive;
+}
+.well{
+    max-width: 100%;
+}
+.jumbotron h1{
+    font-size: 90px !important;
+    margin: 0;
+}
+.box {
+    width: 200px;
+    height: 100px;
+    border: 1px solid white;
+    color: black;
+    margin-top: 30px;
+    border-radius: 15px;
+}
+.box.green{
+    background-color: green;
+}
+.box.red{
+    background-color: red;
+}
+.box.yellow{
+    background-color: yellow;
+}
+.btn-box h1 {
+    margin: 0;
+}
+.panishment button{
+    background-color: red;
+}
+.protection button{
+    background-color: green;
+}
+.game-over {
+    background-color: red;
 }
