@@ -39,3 +39,6 @@ body{
 .protection button{
     background-color: green;
 }
+.game-over {
+    background-color: red;
+}
