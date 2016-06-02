@@ -11,8 +11,15 @@ body{
     text-align: center;
     color: red;
     margin: 0;
+    font-family: 'Bangers', cursive;
 }
-
+.well{
+    max-width: 100%;
+}
+.jumbotron h1{
+    font-size: 90px !important;
+    margin: 0;
+}
 .box {
     width: 200px;
     height: 100px;
