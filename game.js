@@ -35,13 +35,10 @@ function addMods(x) {
       
     var item = items[x];
     $("#btn-"+x).attr('disabled',true);
-    
-    safe = 0;
-    for (var i=0; i < player.items.length; i++ ){
-        safe = safe + player.items[i].modifier;
-    }
-  
-    $("#safe").text = safe;
+    player.items.push(item);
+
+    safe = safe + item.modifier;
+    $("#safe").text(safe);
 }
 
 function hit(x){
@@ -54,14 +51,10 @@ function hit(x){
 }
 
 function update() {
-    
-    document.getElementById('health').innerText = health;
-    document.getElementById('hits').innerText = hits;
-    
+    $("#health").text(health);
+    $("#hits").text(hits);
     
     if(health <= 0){
-         document.getElementById("player-box").classList.add("game-over")
-    }else{
-         document.getElementById("player-box").classList.remove("game-over")
+         $("img[src]").attr("src", "http://wallpapercave.com/wp/RMIs0gk.png")
     }
-}
+};
