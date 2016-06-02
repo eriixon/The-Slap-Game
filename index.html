@@ -7,37 +7,34 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" >
 </head>
 <body>
-    <section class="container">
-        <div class="row" style="height:50%">
-            <div class="col-sm-7 col-sm-offset-3">
-                
-               <div class="panel panel-default" id='player-panel'>
-                   
-                    <div class="panel-heading" >
-                        <h3>Name: Major Payne</br> 
-                        Hit count: <span id='hits'>0</span></br>
-                        Health: <span id='health'>100</span> Safe: <span id='safe'>0</span></h3>
-                        <img class = 'center-block' style="withd: 240px;" src="http://www.trpaulsen.com/wp-content/uploads/2015/07/drill-sergeant2.jpg" alt="angry-sergant">   
-                    </div>
-            </div>
-
-             <div class="col-xs-7 col-xs-offset-3">                 
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                 <div class="col-xs-7 col-xs-offset-3">                 
                  <button style='background-color: yellow' type="button" onClick='hit("slap")'>SLAP HIM</button>
                  <button style='background-color: orange' type="button" onclick='hit("punch")'> PUNCH HIM </button>
                  <button style='background-color: red'    type="button" onclick='hit("kick")'> KICK HIM </button>
              </div>
-             <div class="col-xs-7 col-xs-offset-3">                 
+            </div>
+            <div class="col-md-6">
+               <div class="panel panel-default" id='player-panel'>
+                   <div class="panel-heading text-center">
+                        <h1>Angry Major Payne</h1> 
+                        <h2>Hit count: <span id='hits'>0</span></h2>
+                        <h2>Health: <span id='health'>100</span> Safe: <span id='safe'>0</span></h2>
+                    </div>
+                    <div class="panel-body center-block">
+                        <img class="img-responsive" src="https://rap4-radioafricagroup.netdna-ssl.com/wp-content/uploads/2016/04/angry-man.jpg" alt="angry-sergant"> 
+                    </div>
+            </div>
+            </div>
+            <div class="col-md-3">
                  <button style='background-color: green' type="button" onClick='addMods("helmet")'> HELMET </button>
                  <button style='background-color: green' type="button" onclick='addMods("shield")'> SHIELD </button>
                  <button style='background-color: green' type="button" onclick='addMods("vest")'> VEST </button>
-                 
-             </div>    
-            
-            
-        </div>
-     </section>
+            </div>
+
      
      <script type="text/javascript" src="game.js"></script>
-
 </body>
 </html>
