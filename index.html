@@ -2,19 +2,19 @@
 <head>
     <meta charset="UTF-8">
     <title>The Object Game</title>
-    <link rel="stylesheet" href="game.css">
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="game.css">
 </head>
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-md-3">
-                 <div class="col-xs-7 col-xs-offset-3">                 
+            <div class="jumbotron">
+                <h1>The Slap Game</h1>
+            </div>
+            <div class="col-md-3 btn-box">          
                  <button style='background-color: yellow' type="button" onClick='hit("slap")'>SLAP HIM</button>
                  <button style='background-color: orange' type="button" onclick='hit("punch")'> PUNCH HIM </button>
                  <button style='background-color: red'    type="button" onclick='hit("kick")'> KICK HIM </button>
-             </div>
             </div>
             <div class="col-md-6">
                <div class="panel panel-default" id='player-panel'>
@@ -28,7 +28,7 @@
                     </div>
             </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 btn-box">
                  <button style='background-color: green' type="button" onClick='addMods("helmet")'> HELMET </button>
                  <button style='background-color: green' type="button" onclick='addMods("shield")'> SHIELD </button>
                  <button style='background-color: green' type="button" onclick='addMods("vest")'> VEST </button>

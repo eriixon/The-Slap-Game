@@ -6,3 +6,8 @@ button {
 body{
     background-color: black;
 }
+.jumbotron{
+    background-color: black;
+    text-align: center;
+    color: red;
+}
