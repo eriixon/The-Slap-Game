@@ -12,6 +12,30 @@ body{
     color: red;
     margin: 0;
 }
-.info-box h1 {
-    margin: 50px 0 !important;
+
+.box {
+    width: 200px;
+    height: 100px;
+    border: 1px solid white;
+    color: black;
+    margin-top: 30px;
+    border-radius: 15px;
+}
+.box.green{
+    background-color: green;
+}
+.box.red{
+    background-color: red;
+}
+.box.yellow{
+    background-color: yellow;
+}
+.btn-box h1 {
+    margin: 0;
+}
+.panishment button{
+    background-color: red;
+}
+.protection button{
+    background-color: green;
 }
