@@ -55,6 +55,6 @@ function update() {
     $("#hits").text(hits);
     
     if(health <= 0){
-         $("img[src]").attr("src", "http://wallpapercave.com/wp/RMIs0gk.png")
+         $("img[src]").attr("src", "img/dead.png")
     }
 };
