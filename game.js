@@ -55,6 +55,6 @@ function update() {
     $("#hits").text(hits);
     
     if(health <= 0){
-         $("img[src]").attr("src", "img/dead.png")
-    } $("img[src]").attr("src", "img/man.png")
+         $("img[src]").attr("src", "./img/dead.png")
+    } $("img[src]").attr("src", "./img/man.png")
 };
