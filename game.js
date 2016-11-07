@@ -56,5 +56,5 @@ function update() {
     
     if(health <= 0){
          $("img[src]").attr("src", "./img/dead.png")
-    } $("img[src]").attr("src", "./img/man.png")
+    } else $("img[src]").attr("src", "./img/man.png")
 };
